@@ -1,4 +1,4 @@
-Part 2: React Rendering, Virtual DOM and Reconciliation
+**Part 2: React Rendering, Virtual DOM and Reconciliation**
 4. Virtual DOM and React Fiber
 101. What is the Virtual DOM?
 102. How does the Virtual DOM work?
