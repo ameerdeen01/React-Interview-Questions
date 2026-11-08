@@ -1,0 +1,1407 @@
+Part 1: React Fundamentals – Basic to Intermediate
+1. Introduction to React
+1. What is React?
+2. Why was React introduced?
+3. What are the main features of React?
+4. What are the advantages of React?
+5. What are the disadvantages of React?
+6. What is a JavaScript library?
+7. Is React a library or a framework?
+8. What is the difference between React and Angular?
+9. What is the difference between React and Vue?
+10. What is the difference between React and Next.js?
+11. What is declarative programming?
+12. What is imperative programming?
+13. What is declarative UI?
+14. What is component-based architecture?
+15. What is the Single Page Application (SPA)?
+16. What is the difference between SPA and MPA?
+17. What is JSX?
+18. Is JSX mandatory in React?
+19. How does JSX work internally?
+20. What is the difference between JSX and HTML?
+21. What is Babel?
+22. What is transpilation?
+23. What is React DOM?
+24. What is the React Fiber architecture?
+25. What is the React reconciliation algorithm?
+26. What is the virtual DOM?
+27. What is the difference between Virtual DOM and Real DOM?
+28. Does React always update the entire DOM?
+29. What is the React rendering process?
+30. What happens when a React application starts?
+2. React Components
+31. What is a React component?
+32. What are the different types of components in React?
+33. What is a functional component?
+34. What is a class component?
+35. What is the difference between functional and class components?
+36. Why are functional components preferred today?
+37. What is a pure component?
+38. What is the difference between a PureComponent and a Component?
+39. What is a stateless component?
+40. What is a stateful component?
+41. What is a controlled component?
+42. What is an uncontrolled component?
+43. What is component composition?
+44. What is component reusability?
+45. What is component nesting?
+46. What is a parent component?
+47. What is a child component?
+48. What is a presentational component?
+49. What is a container component?
+50. What is a smart component?
+51. What is a dumb component?
+52. What is a Higher-Order Component (HOC)?
+53. What is a render prop?
+54. What is the difference between HOC and render props?
+55. What is the difference between HOC and custom hooks?
+56. What is a compound component?
+57. What is a recursive component?
+58. What is a dynamically rendered component?
+59. Can a component return multiple elements?
+60. Why do we use React Fragment?
+61. What is the difference between React.Fragment and <>?
+62. Can a component be defined inside another component?
+63. What happens when a component is recreated inside another component?
+64. What are component naming conventions?
+65. What is the difference between an element and a component?
+3. Props and State
+66. What are props in React?
+67. What is state in React?
+68. What is the difference between props and state?
+69. Why are props immutable?
+70. Can a child component modify its parent's state?
+71. What is one-way data binding?
+72. What is unidirectional data flow?
+73. What is prop drilling?
+74. How can we avoid prop drilling?
+75. What is lifting state up?
+76. When should state be lifted up?
+77. What is state colocation?
+78. What is derived state?
+79. What is the problem with derived state?
+80. What is the difference between local state and global state?
+81. What is the difference between state and a normal variable?
+82. Why does changing a normal variable not trigger a re-render?
+83. Why should state not be mutated directly?
+84. What happens when state is updated?
+85. Is state update synchronous or asynchronous?
+86. What is state batching?
+87. What is automatic batching in React 18?
+88. What is the functional state update?
+89. When should we use functional state updates?
+90. What is a stale state?
+91. What is a stale closure?
+92. Why does setState not immediately update the state variable?
+93. Can we update multiple states in a single event?
+94. What happens if we call setState multiple times?
+95. How does React compare previous and next state?
+96. What is state preservation?
+97. What causes React to reset component state?
+98. How can we reset state using a key?
+99. How do props and state affect rendering?
+100. What is the difference between state and context?
+Part 2: React Rendering, Virtual DOM and Reconciliation
+4. Virtual DOM and React Fiber
+101. What is the Virtual DOM?
+102. How does the Virtual DOM work?
+103. How does React create a Virtual DOM?
+104. What is the difference between Virtual DOM and Shadow DOM?
+105. Is Virtual DOM faster than the Real DOM?
+106. How does React minimize DOM operations?
+107. What is the diffing algorithm?
+108. What is reconciliation?
+109. What is React Fiber?
+110. Why was Fiber introduced?
+111. What are the main responsibilities of Fiber?
+112. What is the Fiber node?
+113. What is the difference between the current Fiber tree and work-in-progress Fiber tree?
+114. What is the render phase?
+115. What is the commit phase?
+116. What happens during the render phase?
+117. What happens during the commit phase?
+118. Can the render phase be interrupted?
+119. Can the commit phase be interrupted?
+120. What is concurrent rendering?
+121. What is time slicing?
+122. What is cooperative scheduling?
+123. How does React prioritize updates?
+124. What is the Scheduler in React?
+125. What is the difference between synchronous and concurrent rendering?
+126. What are lanes in React Fiber?
+127. What is the purpose of the lane model?
+128. What is an update queue?
+129. What is a Fiber effect?
+130. What is the difference between a React render and a DOM update?
+5. React Rendering Behavior
+131. What causes a React component to re-render?
+132. Does a parent re-render cause its children to re-render?
+133. Does changing props cause a re-render?
+134. Does changing state cause a re-render?
+135. Does changing context cause a re-render?
+136. Does changing a ref cause a re-render?
+137. Does changing a normal variable cause a re-render?
+138. What is the difference between rendering and mounting?
+139. What is the difference between re-rendering and remounting?
+140. What is a component lifecycle?
+141. What are the lifecycle methods in class components?
+142. What is componentDidMount?
+143. What is componentDidUpdate?
+144. What is componentWillUnmount?
+145. What is getDerivedStateFromProps?
+146. What is getSnapshotBeforeUpdate?
+147. What is shouldComponentUpdate?
+148. What is componentDidCatch?
+149. What is getDerivedStateFromError?
+150. What is the equivalent of lifecycle methods using hooks?
+151. What is the difference between mounting and unmounting?
+152. Why does React Strict Mode render components twice in development?
+153. Does Strict Mode double-render in production?
+154. Why does useEffect execute twice in development?
+155. How do you prevent unnecessary rendering?
+156. What is a render cascade?
+157. What is cascading state update?
+158. What is a render loop?
+159. How do you identify infinite rendering?
+160. How do you debug unexpected re-renders?
+6. Keys and Lists
+161. What is the purpose of the key prop?
+162. Why are keys important in React?
+163. Why should keys be unique?
+164. Why should we avoid using array indexes as keys?
+165. When is using the array index as a key acceptable?
+166. What happens when keys are missing?
+167. What happens when keys are duplicated?
+168. How does React use keys during reconciliation?
+169. How do keys help preserve component state?
+170. How can keys reset component state?
+171. What happens when a list is reordered?
+172. What is the difference between stable keys and dynamic keys?
+173. Why should random values not be used as keys?
+174. How do you render a list of objects?
+175. How do you render nested lists?
+176. How do you render a list with conditional elements?
+177. How do you optimize a large list?
+178. What is list virtualization?
+179. What is windowing?
+180. What is the difference between map() and forEach() in React rendering?
+Part 3: React Hooks – Complete Interview Coverage
+High priority for experienced React interviews
+7. Rules of Hooks
+181. What are React Hooks?
+182. Why were Hooks introduced?
+183. What are the Rules of Hooks?
+184. Why should Hooks be called at the top level?
+185. Why can't Hooks be called inside conditions?
+186. Why can't Hooks be called inside loops?
+187. Can Hooks be called inside event handlers?
+188. Can Hooks be called inside regular JavaScript functions?
+189. Can Hooks be called inside custom Hooks?
+190. How does React identify Hooks between renders?
+191. What happens if the order of Hooks changes?
+192. What is the difference between a built-in Hook and a custom Hook?
+193. What is the difference between a Hook and a normal function?
+194. What is the eslint-plugin-react-hooks?
+195. How does the Rules of Hooks linting work?
+8. useState
+196. What is useState?
+197. What is the syntax of useState?
+198. How does useState work internally?
+199. What is lazy initialization in useState?
+200. What is the difference between useState(0) and useState(() => 0)?
+201. How do you update a state variable?
+202. How do you update an object in state?
+203. How do you update an array in state?
+204. Why should state be immutable?
+205. How do you update nested objects?
+206. How do you update a particular object in an array?
+207. How do you remove an item from an array in state?
+208. How do you add an item to an array in state?
+209. How do you toggle a boolean state?
+210. How do you increment a counter?
+211. What is a functional state updater?
+212. What is the difference between setCount(count + 1) and setCount(prev => prev + 1)?
+213. What happens when setState is called multiple times in one event handler?
+214. What is automatic batching?
+215. How does React 18 automatic batching work?
+216. What is a state snapshot?
+217. Why does state appear unchanged immediately after calling a setter?
+218. What is stale state?
+219. How do you solve stale state problems?
+220. When should you use useState versus useReducer?
+9. useEffect
+221. What is useEffect?
+222. Why do we use useEffect?
+223. What is the syntax of useEffect?
+224. What happens when useEffect has no dependency array?
+225. What happens when useEffect has an empty dependency array?
+226. What happens when useEffect has dependencies?
+227. What is the dependency array?
+228. How does React compare dependencies?
+229. What is the purpose of the cleanup function?
+230. When does the cleanup function execute?
+231. Does cleanup execute before every effect execution?
+232. Does cleanup execute during component unmounting?
+233. How do you fetch API data using useEffect?
+234. How do you prevent memory leaks in useEffect?
+235. How do you cancel an API request in useEffect?
+236. What is AbortController?
+237. How do you avoid race conditions in API calls?
+238. What is an infinite loop in useEffect?
+239. Why does an object dependency cause repeated execution?
+240. Why does a function dependency cause repeated execution?
+241. What are missing dependencies?
+242. What is the exhaustive-deps rule?
+243. How do you solve stale closures in useEffect?
+244. What is the difference between useEffect and lifecycle methods?
+245. What is the difference between useEffect and event handlers?
+246. When should you NOT use useEffect?
+247. Can you update state inside useEffect?
+248. How do you subscribe to WebSocket events using useEffect?
+249. How do you add and remove event listeners using useEffect?
+250. How do you implement polling using useEffect?
+251. How do you implement a timer using useEffect?
+252. How do you synchronize an external system with React?
+253. What happens if the effect returns a Promise?
+254. What is the difference between useEffect(() => {}) and useEffect(() => {}, [])?
+255. How does Strict Mode affect useEffect?
+10. useLayoutEffect and useInsertionEffect
+256. What is useLayoutEffect?
+257. What is the difference between useEffect and useLayoutEffect?
+258. When should you use useLayoutEffect?
+259. Does useLayoutEffect run before browser paint?
+260. What are the performance implications of useLayoutEffect?
+261. How do you measure an element's dimensions using useLayoutEffect?
+262. What is useInsertionEffect?
+263. What is the purpose of useInsertionEffect?
+264. What is the difference between useInsertionEffect and useLayoutEffect?
+265. Why is useInsertionEffect mainly used by CSS-in-JS libraries?
+11. useMemo
+266. What is useMemo?
+267. What is the syntax of useMemo?
+268. Why do we use useMemo?
+269. What is memoization?
+270. How does useMemo work?
+271. What is the difference between useMemo and useState?
+272. What is the difference between useMemo and useEffect?
+273. What is the difference between useMemo and useCallback?
+274. When should you use useMemo?
+275. When should you avoid useMemo?
+276. Can useMemo prevent a component from re-rendering?
+277. Does useMemo guarantee that a value will always be cached?
+278. How do you memoize an expensive calculation?
+279. How do you memoize filtered data?
+280. How do you use useMemo with React.memo?
+12. useCallback
+281. What is useCallback?
+282. What is the syntax of useCallback?
+283. Why do we use useCallback?
+284. What is the difference between useCallback and useMemo?
+285. What is the difference between useCallback and a normal function?
+286. How does useCallback help React.memo?
+287. Can useCallback prevent a parent component from re-rendering?
+288. When should you use useCallback?
+289. When should you avoid useCallback?
+290. What is a stale closure in useCallback?
+291. How do you solve stale closures in useCallback?
+292. What happens when the dependency array is empty?
+293. What happens when dependencies change?
+294. Can you use useCallback for API calls?
+295. What is the difference between memoizing a value and memoizing a function?
+13. useRef
+296. What is useRef?
+297. What is the syntax of useRef?
+298. What is the difference between useRef and useState?
+299. Does updating a ref cause a re-render?
+300. What is the purpose of the .current property?
+301. How do you access a DOM element using useRef?
+302. How do you focus an input using useRef?
+303. How do you store a timer ID using useRef?
+304. How do you store previous state using useRef?
+305. How do you store mutable values without triggering rendering?
+306. What is the difference between createRef and useRef?
+307. What is the difference between a callback ref and an object ref?
+308. What is forwardRef?
+309. Is forwardRef necessary in React 19?
+310. What is useImperativeHandle?
+311. When should you use useImperativeHandle?
+312. How do you expose a child component's methods to a parent?
+313. What are the limitations of refs?
+314. Why should refs not be used for values that affect UI?
+14. useContext
+315. What is Context API?
+316. Why was Context API introduced?
+317. What is createContext?
+318. What is useContext?
+319. How do you create a Context Provider?
+320. How do you consume Context?
+321. What is prop drilling?
+322. How does Context API solve prop drilling?
+323. What is the difference between Context API and Redux?
+324. What is the difference between Context API and props?
+325. Does Context cause re-renders?
+326. How do you optimize Context performance?
+327. How do you split Context into multiple contexts?
+328. What is the difference between Context and a global state management library?
+329. How do you use Context for authentication?
+330. How do you use Context for themes?
+331. What are the limitations of Context API?
+332. Can Context replace Redux?
+333. How do you prevent unnecessary Context updates?
+15. useReducer
+334. What is useReducer?
+335. What is the syntax of useReducer?
+336. What is a reducer function?
+337. What are the arguments of a reducer?
+338. What is the difference between useState and useReducer?
+339. When should you use useReducer?
+340. What is an action in a reducer?
+341. What is a dispatch function?
+342. What is the difference between dispatch and setState?
+343. Can a reducer perform API calls?
+344. Why should reducers be pure functions?
+345. How do you manage complex state using useReducer?
+346. What is lazy initialization in useReducer?
+347. How do you combine Context API and useReducer?
+348. How do you implement a shopping cart using useReducer?
+349. How do you implement authentication state using useReducer?
+350. How do you handle multiple actions in a reducer?
+16. Custom Hooks
+351. What is a custom Hook?
+352. Why do we need custom Hooks?
+353. What are the naming conventions for custom Hooks?
+354. How do you create a custom Hook?
+355. What is the difference between a custom Hook and a component?
+356. Do custom Hooks share state between components?
+357. How do custom Hooks share logic?
+358. How do you create a custom useFetch Hook?
+359. How do you create a custom useDebounce Hook?
+360. How do you create a custom useLocalStorage Hook?
+361. How do you create a custom usePrevious Hook?
+362. How do you create a custom useWindowSize Hook?
+363. How do you create a custom useOutsideClick Hook?
+364. How do you create a custom useOnlineStatus Hook?
+365. How do you create a custom useAuth Hook?
+366. How do you test custom Hooks?
+367. What are the limitations of custom Hooks?
+368. How do you avoid unnecessary re-renders in custom Hooks?
+369. What is the difference between custom Hooks and HOCs?
+370. Can one custom Hook call another custom Hook?
+17. Other and Advanced React Hooks
+371. What is useTransition?
+372. What is the difference between useTransition and useDeferredValue?
+373. What is a transition in React?
+374. What is a non-urgent update?
+375. How does useTransition improve UI responsiveness?
+376. What is startTransition?
+377. What is the difference between startTransition and useTransition?
+378. What is useDeferredValue?
+379. How does useDeferredValue work?
+380. Is useDeferredValue equivalent to debounce?
+381. What is useId?
+382. How does useId help accessibility?
+383. Can useId be used as a list key?
+384. What is useSyncExternalStore?
+385. When should you use useSyncExternalStore?
+386. What is tearing in React?
+387. How does useSyncExternalStore prevent tearing?
+388. What is useDebugValue?
+389. What is useEffectEvent?
+390. When should you use useEffectEvent?
+391. What is the use API?
+392. How is use different from other Hooks?
+393. Can use be called conditionally?
+394. How does use read a Promise?
+395. How does use work with Suspense?
+396. What is useActionState?
+397. What is useOptimistic?
+398. What is useFormStatus?
+399. What is the difference between useActionState and useState?
+400. What is the difference between useOptimistic and regular state?
+React's current reference documentation covers these Hooks and their specific purposes, including state, context, refs, performance, external stores, and Actions. 
+React+1
+
+Part 4: React 19, Modern React and Advanced APIs
+18. React 19 Features
+401. What are the major features introduced in React 19?
+402. What is the React Actions feature?
+403. What is the difference between Actions and traditional event handlers?
+404. What are asynchronous Actions?
+405. What is the action prop in React 19 forms?
+406. What is the formAction prop?
+407. How does React 19 simplify form submissions?
+408. What is the new ref as a prop feature?
+409. Why is forwardRef no longer necessary for function components in React 19?
+410. What are the new React 19 hooks?
+411. What is the difference between React 18 and React 19?
+412. What are React 19 improvements in form handling?
+413. What is the new metadata support in React 19?
+414. How does React 19 support stylesheets?
+415. What is resource preloading in React 19?
+416. What are the limitations of React 19 features?
+417. How do you migrate a React 18 application to React 19?
+418. What are the breaking changes in React 19?
+419. How does React 19 improve accessibility?
+420. How does React 19 support Server Components?
+19. React Compiler
+421. What is the React Compiler?
+422. Why was the React Compiler introduced?
+423. How does the React Compiler optimize React applications?
+424. What is automatic memoization?
+425. What is the difference between React Compiler and useMemo?
+426. What is the difference between React Compiler and useCallback?
+427. Does the React Compiler eliminate the need for React.memo?
+428. Does the React Compiler eliminate the need for useMemo?
+429. How does the React Compiler detect dependencies?
+430. What is the purpose of "use memo"?
+431. What is the purpose of "use no memo"?
+432. What are the limitations of the React Compiler?
+433. How do you configure the React Compiler?
+434. How do you enable React Compiler in a Next.js project?
+435. What is the relationship between React Compiler and ESLint?
+436. How does the React Compiler handle impure components?
+437. Can React Compiler optimize custom Hooks?
+438. How do you verify whether a component is compiler-optimized?
+20. React Server Components
+439. What are React Server Components (RSC)?
+440. Why were Server Components introduced?
+441. What is the difference between Server Components and Client Components?
+442. What is the difference between Server Components and SSR?
+443. What is the difference between Server Components and traditional React components?
+444. What is the "use client" directive?
+445. What is the "use server" directive?
+446. What is the difference between "use client" and "use server"?
+447. Can Server Components use useState?
+448. Can Server Components use useEffect?
+449. Can Server Components fetch data?
+450. Can Client Components import Server Components?
+451. Can Server Components import Client Components?
+452. What is the Server Component payload?
+453. What is the React Server Component wire format?
+454. How does React render Server Components?
+455. What is a server-only module?
+456. How do you prevent server code from being bundled into the client?
+457. What are the advantages of Server Components?
+458. What are the disadvantages of Server Components?
+459. How do Server Components reduce JavaScript bundle size?
+460. How do Server Components improve performance?
+461. What are Server Functions?
+462. What are the security concerns with Server Functions?
+463. What is progressive enhancement in React forms?
+464. What is the difference between Server Actions and API routes?
+465. How do Server Components work with Suspense?
+466. How do you handle errors in Server Components?
+467. How do you handle authentication in Server Components?
+468. How do you handle caching in Server Components?
+469. Can Server Components access the database directly?
+470. What are the limitations of React Server Components?
+21. Suspense, Lazy Loading and Code Splitting
+471. What is React Suspense?
+472. Why do we use Suspense?
+473. What is a Suspense boundary?
+474. What is lazy loading in React?
+475. What is React.lazy()?
+476. What is the difference between React.lazy and dynamic imports?
+477. How does code splitting work?
+478. What is route-based code splitting?
+479. What is component-based code splitting?
+480. How do you lazy-load a component?
+481. How do you lazy-load images?
+482. How do you lazy-load routes?
+483. What is the fallback prop in Suspense?
+484. Can Suspense be used for API data fetching?
+485. What happens when a component suspends?
+486. What is the difference between Suspense and a loading state?
+487. What is the difference between Suspense and Error Boundaries?
+488. Can Suspense boundaries be nested?
+489. How do you prevent a Suspense fallback from flashing?
+490. What is streaming with Suspense?
+491. How do you use Suspense in a Next.js application?
+492. What is the difference between eager loading and lazy loading?
+493. How does lazy loading improve performance?
+494. What is preloading versus prefetching?
+495. How do you handle lazy-loading failures?
+Part 5: React Performance Optimization
+22. React.memo and Memoization
+496. What is React.memo?
+497. How does React.memo work?
+498. What is shallow comparison?
+499. What is the difference between React.memo and PureComponent?
+500. What is the difference between React.memo and useMemo?
+501. What is the difference between React.memo and useCallback?
+502. When should you use React.memo?
+503. When should you avoid React.memo?
+504. Can React.memo prevent state-based re-renders?
+505. Can React.memo prevent Context-based re-renders?
+506. What is a custom comparison function in React.memo?
+507. What are the risks of custom comparison functions?
+508. How do you memoize child components?
+509. How do you optimize a component with expensive rendering?
+510. How do you identify unnecessary memoization?
+23. React Performance and Profiling
+511. What is React Profiler?
+512. What is React DevTools?
+513. How do you measure React component rendering performance?
+514. What is the Profiler API?
+515. What is the difference between actualDuration and baseDuration?
+516. What is the difference between commit time and render time?
+517. What is the React DevTools Highlight Updates feature?
+518. What is a performance bottleneck?
+519. How do you optimize a slow React application?
+520. How do you optimize a large dashboard?
+521. How do you optimize a data table with 10,000 rows?
+522. How do you optimize a large dropdown?
+523. How do you optimize a complex form?
+524. How do you optimize a search experience?
+525. How do you optimize a page with multiple API calls?
+526. How do you reduce unnecessary API requests?
+527. What is debouncing?
+528. What is throttling?
+529. What is the difference between debounce and throttle?
+530. How do you implement debounce in React?
+531. How do you implement throttle in React?
+532. How do you use useDeferredValue for search?
+533. How do you use useTransition for expensive updates?
+534. How do you optimize images in React?
+535. How do you optimize bundle size?
+536. What is tree shaking?
+537. What is dead code elimination?
+538. How do you analyze bundle size?
+539. What is a Webpack Bundle Analyzer?
+540. What is the difference between runtime optimization and build-time optimization?
+24. Core Web Vitals and React Performance
+541. What is First Contentful Paint (FCP)?
+542. What is Largest Contentful Paint (LCP)?
+543. What is Cumulative Layout Shift (CLS)?
+544. What is Interaction to Next Paint (INP)?
+545. What is Time to First Byte (TTFB)?
+546. What is Total Blocking Time (TBT)?
+547. What is First Input Delay (FID)?
+548. What is Speed Index?
+549. What are Core Web Vitals?
+550. How do you improve LCP in a React application?
+551. How do you reduce CLS in React?
+552. How do you improve INP?
+553. How does JavaScript bundle size affect performance?
+554. How does hydration affect performance?
+555. How do you optimize the initial loading of a React application?
+556. How do you use Lighthouse for React performance testing?
+557. What is the difference between Lighthouse and WebPageTest?
+558. What is the difference between preload and prefetch?
+559. What is the difference between preload and preconnect?
+560. How do you optimize font loading in React?
+Part 6: State Management
+25. Redux
+561. What is Redux?
+562. Why do we use Redux?
+563. What are the core principles of Redux?
+564. What is a Store?
+565. What is an Action?
+566. What is a Reducer?
+567. What is Dispatch?
+568. What is the Redux data flow?
+569. What is the difference between Redux and Context API?
+570. What is the difference between Redux and useReducer?
+571. What is Redux Toolkit?
+572. Why was Redux Toolkit introduced?
+573. What is configureStore?
+574. What is createSlice?
+575. What is createAsyncThunk?
+576. What is createSelector?
+577. What is Reselect?
+578. What are selectors in Redux?
+579. What is memoized selector?
+580. What is Immer?
+581. How does Redux Toolkit allow mutation-like syntax?
+582. What is middleware in Redux?
+583. What is Redux DevTools?
+584. What is the difference between Redux Thunk and Redux Saga?
+585. What is Redux Thunk?
+586. What is Redux Saga?
+587. What is a generator function?
+588. How does Redux Saga handle API calls?
+589. What is the difference between takeEvery and takeLatest?
+590. What is put in Redux Saga?
+591. What is call in Redux Saga?
+592. What is select in Redux Saga?
+593. How do you handle API errors in Redux?
+594. How do you persist Redux state?
+595. What is Redux Persist?
+596. How do you manage authentication in Redux?
+597. How do you avoid unnecessary Redux re-renders?
+598. What is normalized state?
+599. What is the difference between local state and Redux state?
+600. When should you not use Redux?
+26. Other State Management Libraries
+601. What is Zustand?
+602. What is the difference between Zustand and Redux?
+603. What is Jotai?
+604. What is Recoil?
+605. What is MobX?
+606. What is the difference between MobX and Redux?
+607. What is TanStack Query?
+608. What is React Query?
+609. What is the difference between Redux and React Query?
+610. What is server state?
+611. What is client state?
+612. What is the difference between server state and client state?
+613. What is SWR?
+614. What is the difference between SWR and TanStack Query?
+615. What is caching in TanStack Query?
+616. What is stale time?
+617. What is cache time or garbage-collection time?
+618. What is background refetching?
+619. What is optimistic updating?
+620. How do you implement optimistic updates?
+621. How do you handle query invalidation?
+622. What is a mutation in TanStack Query?
+623. What is infinite query?
+624. How do you handle pagination with React Query?
+625. How do you avoid duplicate API calls?
+626. What is a cache key?
+627. How do you handle dependent queries?
+628. How do you handle API retries?
+629. How do you manage global loading and error states?
+630. How do you choose a state management library?
+Part 7: Routing, Forms and API Integration
+27. React Router
+631. What is React Router?
+632. Why do we need routing in React?
+633. What is the difference between BrowserRouter and HashRouter?
+634. What is the difference between BrowserRouter and MemoryRouter?
+635. What is a Route?
+636. What is Routes?
+637. What is a nested route?
+638. What is an index route?
+639. What is a dynamic route?
+640. What is a route parameter?
+641. What is the difference between route params and query params?
+642. What is useParams?
+643. What is useNavigate?
+644. What is useLocation?
+645. What is useSearchParams?
+646. What is Outlet?
+647. What is a protected route?
+648. How do you implement authentication-based routing?
+649. How do you implement role-based routing?
+650. How do you implement lazy loading in React Router?
+651. How do you handle 404 pages?
+652. How do you redirect users?
+653. What is the difference between Link and NavLink?
+654. What is the difference between navigate() and Link?
+655. How do you preserve query parameters during navigation?
+656. How do you pass state during navigation?
+657. How do you implement nested layouts?
+658. How do you implement breadcrumbs?
+659. How do you handle route-level errors?
+660. What is the difference between React Router v6 and v7?
+28. Forms and Validation
+661. What is a form in React?
+662. What is a controlled form?
+663. What is an uncontrolled form?
+664. What is the difference between controlled and uncontrolled inputs?
+665. How do you handle form submission?
+666. How do you prevent default form submission?
+667. What is the purpose of event.preventDefault()?
+668. What is the difference between onChange and onInput?
+669. How do you handle multiple inputs using a single state?
+670. How do you handle checkbox inputs?
+671. How do you handle radio buttons?
+672. How do you handle dropdowns?
+673. How do you handle file uploads?
+674. How do you handle multi-step forms?
+675. How do you validate forms?
+676. What is client-side validation?
+677. What is server-side validation?
+678. Why should server-side validation always be performed?
+679. How do you display validation errors?
+680. How do you handle dependent form fields?
+681. How do you reset a form?
+682. How do you disable the submit button during submission?
+683. How do you prevent duplicate form submission?
+684. What is React Hook Form?
+685. What is Formik?
+686. What is the difference between Formik and React Hook Form?
+687. What is Zod?
+688. What is Yup?
+689. How do you integrate Zod with React Hook Form?
+690. What is the difference between React 19 Actions and traditional form submission?
+691. How do you use useActionState in a form?
+692. How do you use useFormStatus?
+693. How do you implement optimistic form submission?
+694. How do you handle form submission errors?
+695. How do you implement accessible forms?
+29. API Integration
+696. How do you integrate APIs in React?
+697. What is the difference between Fetch API and Axios?
+698. What is Axios?
+699. What are Axios interceptors?
+700. How do you add request interceptors?
+701. How do you add response interceptors?
+702. How do you handle API errors?
+703. How do you handle HTTP status codes?
+704. How do you handle 401 Unauthorized?
+705. How do you handle 403 Forbidden?
+706. How do you handle 404 Not Found?
+707. How do you handle 500 Internal Server Error?
+708. How do you implement token refresh?
+709. How do you handle concurrent token refresh requests?
+710. How do you cancel API calls?
+711. How do you implement API retries?
+712. How do you handle API timeouts?
+713. How do you implement pagination?
+714. How do you implement infinite scrolling?
+715. How do you implement search with API integration?
+716. How do you implement debounced API calls?
+717. How do you handle race conditions?
+718. How do you handle parallel API calls?
+719. What is the difference between Promise.all and Promise.allSettled?
+720. How do you handle dependent API calls?
+721. How do you handle API response transformation?
+722. How do you implement a centralized API service?
+723. How do you manage API configuration?
+724. How do you manage environment variables?
+725. How do you handle API loading states?
+726. How do you handle API caching?
+727. How do you handle stale API responses?
+728. How do you handle GraphQL API integration?
+729. What is Apollo Client?
+730. What is the difference between REST and GraphQL?
+Part 8: Testing React Applications
+30. Unit Testing and Integration Testing
+731. What is unit testing?
+732. What is integration testing?
+733. What is end-to-end testing?
+734. What is the difference between unit and integration testing?
+735. What is the difference between integration and E2E testing?
+736. What is Jest?
+737. What is Vitest?
+738. What is React Testing Library?
+739. What is Enzyme?
+740. What is the difference between Enzyme and React Testing Library?
+741. What is the testing philosophy of React Testing Library?
+742. What is render() in React Testing Library?
+743. What is screen?
+744. What is getByRole?
+745. What is the difference between getBy, queryBy, and findBy?
+746. What is userEvent?
+747. What is the difference between userEvent and fireEvent?
+748. How do you test a button click?
+749. How do you test a form?
+750. How do you test a custom Hook?
+751. How do you test API calls?
+752. How do you mock API responses?
+753. What is Jest mock?
+754. What is a spy?
+755. What is snapshot testing?
+756. What are the disadvantages of snapshot testing?
+757. How do you test loading states?
+758. How do you test error states?
+759. How do you test conditional rendering?
+760. How do you test Context API?
+761. How do you test Redux-connected components?
+762. How do you test React Router?
+763. How do you test asynchronous components?
+764. What is waitFor?
+765. How do you test Suspense?
+766. How do you test Error Boundaries?
+767. How do you measure test coverage?
+768. What is code coverage?
+769. What is the difference between line coverage and branch coverage?
+770. What are smoke tests?
+771. What are regression tests?
+772. What are acceptance tests?
+773. What is Cypress?
+774. What is Playwright?
+775. What is the difference between Cypress and Playwright?
+776. How do you implement testing in CI/CD?
+777. What is test-driven development?
+778. What is behavior-driven development?
+779. How do you test accessibility?
+780. What is the testing pyramid?
+Part 9: React Architecture and Design Patterns
+31. Component Architecture
+781. What is component-driven development?
+782. What is Atomic Design?
+783. What are atoms, molecules, organisms, templates, and pages?
+784. How do you structure a large React application?
+785. What is feature-based folder structure?
+786. What is domain-driven frontend architecture?
+787. What is a scalable React architecture?
+788. What is separation of concerns?
+789. What is the Single Responsibility Principle?
+790. How do you create reusable components?
+791. How do you avoid overengineering reusable components?
+792. What is a design system?
+793. How do you integrate a design system with React?
+794. What is a component library?
+795. What is the difference between a design system and a component library?
+796. What is the difference between a shared component and a feature component?
+797. How do you manage cross-feature dependencies?
+798. How do you handle shared utilities?
+799. How do you organize API services?
+800. How do you manage application configuration?
+801. How do you manage environment-specific configuration?
+802. How do you create a scalable frontend architecture?
+803. What is dependency inversion in frontend architecture?
+804. How do you apply SOLID principles in React?
+805. How do you implement the Single Responsibility Principle in a component?
+806. How do you implement the Open/Closed Principle?
+807. How do you implement the Dependency Inversion Principle?
+808. What are the trade-offs of component abstraction?
+809. How do you decide whether to create a reusable component?
+810. How do you handle a component with too many props?
+32. Design Patterns in React
+811. What is a design pattern?
+812. What is a Higher-Order Component?
+813. What is a Render Props pattern?
+814. What is a Compound Components pattern?
+815. What is a Provider pattern?
+816. What is a Container/Presentational pattern?
+817. What is a Custom Hook pattern?
+818. What is a Controlled Components pattern?
+819. What is a State Reducer pattern?
+820. What is a Factory pattern?
+821. What is an Adapter pattern?
+822. What is a Facade pattern?
+823. What is a Strategy pattern?
+824. What is an Observer pattern?
+825. What is a Singleton pattern?
+826. What is the difference between HOC and Compound Components?
+827. What is the difference between Provider and HOC?
+828. How do you implement a Modal using Compound Components?
+829. How do you implement Tabs using Compound Components?
+830. How do you implement an Accordion using Compound Components?
+831. How do you implement a reusable Button using composition?
+832. What is inversion of control in React?
+833. What is dependency injection in React?
+834. How do you apply the Strategy pattern for dynamic validation?
+835. How do you apply the Adapter pattern to API responses?
+Part 10: Micro Frontends and Module Federation
+Important for React Architect and Technical Lead interviews
+33. Micro Frontend Architecture
+836. What are Micro Frontends?
+837. Why do we need Micro Frontends?
+838. What are the advantages of Micro Frontends?
+839. What are the disadvantages of Micro Frontends?
+840. What is a Micro Frontend architecture?
+841. What is the difference between Monolithic Frontend and Micro Frontends?
+842. What is the difference between Micro Frontends and Microservices?
+843. What is a Host application?
+844. What is a Remote application?
+845. What is Module Federation?
+846. How does Module Federation work?
+847. What is Webpack Module Federation?
+848. What is the difference between Host and Remote?
+849. What is a Remote Entry file?
+850. What is a shared dependency?
+851. How do you share React and React DOM?
+852. What is the singleton configuration in Module Federation?
+853. What happens when multiple React versions are loaded?
+854. What is the difference between eager and lazy loading in Module Federation?
+855. How do you configure Module Federation?
+856. How do you dynamically load a Remote application?
+857. How do you handle Remote application failures?
+858. How do you implement error handling in Micro Frontends?
+859. How do you handle authentication across Micro Frontends?
+860. How do you share authentication tokens?
+861. How do you implement SSO across Micro Frontends?
+862. How do you share global state?
+863. How do Micro Frontends communicate?
+864. What is the difference between props and custom events for communication?
+865. What is the role of an Event Bus?
+866. How do you implement an Event Bus?
+867. How do you avoid tight coupling between Micro Frontends?
+868. How do you handle routing across Micro Frontends?
+869. How do you manage CSS conflicts?
+870. What is CSS isolation?
+871. What is Shadow DOM?
+872. How do you handle shared design systems?
+873. How do you manage independent deployment?
+874. How do you version Micro Frontends?
+875. How do you handle backward compatibility?
+876. How do you implement CI/CD for Micro Frontends?
+877. How do you monitor Micro Frontends?
+878. How do you handle logging across Micro Frontends?
+879. How do you handle performance in Micro Frontends?
+880. How do you avoid duplicate dependencies?
+881. What is the difference between runtime integration and build-time integration?
+882. What is the difference between Module Federation and iframe integration?
+883. What is the difference between Module Federation and Web Components?
+884. What is the difference between Webpack Module Federation and Native Federation?
+885. What are the risks of Micro Frontend architecture?
+886. When should you avoid Micro Frontends?
+887. How do you decide the boundaries of Micro Frontends?
+888. How do you split a large React application into Micro Frontends?
+889. How do you implement a shared Header and Footer?
+890. How do you handle cross-application navigation?
+Part 11: SSR, CSR, SSG and Next.js Integration
+34. Rendering Strategies
+891. What is Client-Side Rendering (CSR)?
+892. What is Server-Side Rendering (SSR)?
+893. What is Static Site Generation (SSG)?
+894. What is Incremental Static Regeneration (ISR)?
+895. What is hydration?
+896. What is hydration mismatch?
+897. What causes hydration errors?
+898. How do you solve hydration mismatch?
+899. What is partial hydration?
+900. What is progressive hydration?
+901. What is streaming SSR?
+902. What is selective hydration?
+903. What is the difference between CSR and SSR?
+904. What is the difference between SSR and SSG?
+905. What is the difference between SSG and ISR?
+906. What are the advantages of SSR?
+907. What are the disadvantages of SSR?
+908. What are the advantages of CSR?
+909. What are the disadvantages of CSR?
+910. How does SSR improve SEO?
+911. How does React hydrate server-rendered HTML?
+912. What is hydrateRoot?
+913. What is createRoot?
+914. What is the difference between hydrateRoot and createRoot?
+915. What is renderToString?
+916. What is renderToPipeableStream?
+917. What is renderToReadableStream?
+918. How do you implement SSR without Next.js?
+919. How do you handle API calls during SSR?
+920. How do you handle errors during SSR?
+35. React and Next.js
+921. What is Next.js?
+922. Why do we use Next.js with React?
+923. What is the difference between React and Next.js?
+924. What is the Next.js App Router?
+925. What is the Next.js Pages Router?
+926. What is the difference between App Router and Pages Router?
+927. What are Server Components in Next.js?
+928. What are Client Components in Next.js?
+929. What is the "use client" directive in Next.js?
+930. What is the difference between page.tsx and layout.tsx?
+931. What is a nested layout?
+932. What is a template in Next.js?
+933. What is a loading file?
+934. What is an error file?
+935. What is a not-found file?
+936. What is route grouping?
+937. What are parallel routes?
+938. What are intercepting routes?
+939. What are dynamic routes?
+940. What are catch-all routes?
+941. What is middleware in Next.js?
+942. What is a Server Action in Next.js?
+943. What is generateStaticParams?
+944. What is generateMetadata?
+945. What is the Next.js Image component?
+946. How does Next.js optimize images?
+947. What is the difference between fetch caching and React Query caching?
+948. What is revalidation in Next.js?
+949. What is the difference between static and dynamic rendering in Next.js?
+950. How do you implement authentication in Next.js?
+951. How do you implement authorization in Next.js?
+952. How do you handle environment variables in Next.js?
+953. How do you deploy a Next.js application?
+954. How do you optimize Next.js performance?
+955. How do React Server Components and Next.js work together?
+Part 12: React with TypeScript
+36. TypeScript Fundamentals in React
+956. Why do we use TypeScript with React?
+957. What is the difference between JavaScript and TypeScript?
+958. What is the difference between type and interface?
+959. How do you type React props?
+960. How do you type state using useState?
+961. How do you type useReducer?
+962. How do you type useRef?
+963. How do you type event handlers?
+964. How do you type a form event?
+965. How do you type a button click event?
+966. How do you type an input change event?
+967. What is React.FC?
+968. What are the advantages and disadvantages of React.FC?
+969. How do you type children in React?
+970. What is ReactNode?
+971. What is ReactElement?
+972. What is the difference between ReactNode and ReactElement?
+973. What is PropsWithChildren?
+974. How do you type optional props?
+975. How do you type default props?
+976. How do you type callback props?
+977. How do you type generic components?
+978. How do you type a custom Hook?
+979. How do you type a Context API?
+980. How do you type a reducer?
+981. How do you type API responses?
+982. What is a discriminated union?
+983. What is a union type?
+984. What is a generic type?
+985. What is the difference between any and unknown?
+986. What is type narrowing?
+987. What is the difference between never and void?
+988. How do you type a component that accepts dynamic props?
+989. How do you type polymorphic components?
+990. How do you type a reusable Button component?
+Part 13: Security, Accessibility and Internationalization
+37. React Security
+991. What are the common security risks in React applications?
+992. What is Cross-Site Scripting (XSS)?
+993. How does React prevent XSS?
+994. What is dangerouslySetInnerHTML?
+995. What are the risks of dangerouslySetInnerHTML?
+996. How do you sanitize HTML in React?
+997. What is Content Security Policy (CSP)?
+998. How do you prevent XSS in React?
+999. How do you securely store authentication tokens?
+1000. What is the difference between localStorage and HttpOnly cookies?
+1001. What is Cross-Site Request Forgery (CSRF)?
+1002. How do you prevent CSRF?
+1003. What is CORS?
+1004. How do you handle CORS errors?
+1005. Why should sensitive API keys not be stored in frontend code?
+1006. How do you protect routes in React?
+1007. Is hiding a UI element sufficient for authorization?
+1008. How do you implement secure authentication?
+1009. How do you prevent open redirects?
+1010. What are security concerns with React Server Functions?
+38. Accessibility (WCAG)
+1011. What is accessibility in React?
+1012. What is WCAG?
+1013. What is WCAG 2.0?
+1014. What is WCAG 2.1?
+1015. What is WCAG 2.2?
+1016. What is semantic HTML?
+1017. Why is semantic HTML important?
+1018. What is ARIA?
+1019. What is the difference between HTML semantics and ARIA?
+1020. What is aria-label?
+1021. What is aria-labelledby?
+1022. What is aria-describedby?
+1023. What is aria-live?
+1024. What is keyboard accessibility?
+1025. How do you make a React application keyboard accessible?
+1026. How do you implement accessible modals?
+1027. How do you implement accessible dropdowns?
+1028. How do you implement accessible tabs?
+1029. How do you implement accessible forms?
+1030. What is focus management?
+1031. What is focus trapping?
+1032. What is screen reader accessibility?
+1033. How do you handle focus after route navigation?
+1034. What is color contrast?
+1035. How do you test accessibility?
+1036. What is axe-core?
+1037. What is Lighthouse accessibility testing?
+1038. How do you handle accessibility in a design system?
+39. Internationalization and Localization
+1039. What is internationalization (i18n)?
+1040. What is localization (l10n)?
+1041. What is the difference between internationalization and localization?
+1042. How do you implement multilingual React applications?
+1043. What is React Intl?
+1044. What is i18next?
+1045. What is react-i18next?
+1046. How do you manage translation files?
+1047. How do you implement language switching?
+1048. How do you handle RTL languages?
+1049. How do you format dates and numbers for different locales?
+1050. How do you handle pluralization?
+1051. How do you handle translated content in React components?
+1052. How do you implement localization with Next.js?
+1053. How do you manage locale-based routing?
+1054. How do you test localized applications?
+Part 14: CSS, Build Tools and Frontend Ecosystem
+40. Styling React Applications
+1055. How do you style React components?
+1056. What is CSS Modules?
+1057. What is Styled Components?
+1058. What is Emotion?
+1059. What is Tailwind CSS?
+1060. What is Sass/SCSS?
+1061. What is the difference between CSS Modules and Styled Components?
+1062. What is the difference between Tailwind CSS and Bootstrap?
+1063. What is the difference between global CSS and scoped CSS?
+1064. What is CSS-in-JS?
+1065. What are the advantages and disadvantages of CSS-in-JS?
+1066. How do you handle themes in React?
+1067. How do you implement dark mode?
+1068. How do you implement responsive design?
+1069. What is the difference between Flexbox and CSS Grid?
+1070. What is the difference between display: none and visibility: hidden?
+1071. What is the difference between position: absolute and position: fixed?
+1072. What is the difference between box-sizing: content-box and border-box?
+1073. What is BEM naming?
+1074. How do you avoid CSS conflicts in Micro Frontends?
+1075. How do you optimize CSS performance?
+1076. How do you remove unused CSS?
+1077. How do you manage CSS design tokens?
+1078. How do you implement component variants?
+1079. How do you handle dynamic styling?
+1080. How do you integrate Figma designs into React?
+41. Webpack, Vite and Build Tools
+1081. What is Webpack?
+1082. What is Vite?
+1083. What is the difference between Webpack and Vite?
+1084. What is a bundler?
+1085. What is a module bundler?
+1086. What is a loader in Webpack?
+1087. What is a plugin in Webpack?
+1088. What is the difference between a loader and a plugin?
+1089. What is a development server?
+1090. What is Hot Module Replacement (HMR)?
+1091. What is Fast Refresh?
+1092. What is tree shaking?
+1093. What is code splitting?
+1094. What is minification?
+1095. What is source mapping?
+1096. What is Babel?
+1097. What is SWC?
+1098. What is esbuild?
+1099. What is PostCSS?
+1100. What is autoprefixer?
+1101. What is the purpose of package.json?
+1102. What is the purpose of package-lock.json?
+1103. What is the difference between npm, yarn and pnpm?
+1104. What is semantic versioning?
+1105. What is the difference between dependencies and devDependencies?
+1106. What is the difference between peerDependencies and dependencies?
+1107. What is a monorepo?
+1108. What is Turborepo?
+1109. What is Nx?
+1110. How do you optimize a production build?
+42. CI/CD and Deployment
+1111. What is CI/CD?
+1112. What is Continuous Integration?
+1113. What is Continuous Delivery?
+1114. What is Continuous Deployment?
+1115. How do you deploy a React application?
+1116. What is a build pipeline?
+1117. What is a release pipeline?
+1118. What is the difference between Azure Pipelines and GitHub Actions?
+1119. What is the difference between Azure Artifacts and JFrog Artifactory?
+1120. How do you implement CI/CD for React?
+1121. How do you run unit tests in a pipeline?
+1122. How do you run linting in a pipeline?
+1123. How do you manage environment variables in CI/CD?
+1124. How do you manage secrets?
+1125. How do you implement rollback?
+1126. What is blue-green deployment?
+1127. What is canary deployment?
+1128. What is feature flagging?
+1129. How do you implement feature flags in React?
+1130. How do you monitor a deployed React application?
+1131. What is Sentry?
+1132. What is Application Insights?
+1133. What is the difference between a build-time error and a runtime error?
+1134. How do you handle production errors?
+1135. How do you implement release readiness checks?
+Part 15: Real-World React Scenario-Based Questions
+Critical for Senior Developer, Lead and Architect rounds
+43. Rendering and Debugging Scenarios
+1136. A component re-renders continuously. How do you debug it?
+1137. A child component re-renders when its parent updates. How do you optimize it?
+1138. A component renders twice in development. Is this a bug?
+1139. A component renders twice in production. How do you investigate?
+1140. An API call executes twice. How do you prevent duplicate calls?
+1141. A useEffect runs infinitely. How do you fix it?
+1142. A useEffect does not execute when expected. How do you debug it?
+1143. A state update does not reflect immediately. How do you solve it?
+1144. A stale closure causes incorrect state. How do you fix it?
+1145. A list item loses its input value after reordering. Why?
+1146. A component loses state after navigation. How do you investigate?
+1147. A modal resets its form unexpectedly. How do you debug it?
+1148. A component does not update after modifying an object. Why?
+1149. A Context update causes many components to re-render. How do you optimize it?
+1150. A memoized component still re-renders. Why?
+44. API and Authentication Scenarios
+1151. An API returns 401. How do you handle authentication?
+1152. An API returns 403. What is the difference from 401?
+1153. An access token expires during an API call. How do you refresh it?
+1154. Multiple API calls fail because the token expired. How do you handle them?
+1155. A user logs out in one Micro Frontend. How do you synchronize the others?
+1156. How do you implement a centralized Axios interceptor?
+1157. How do you handle API request cancellation?
+1158. A slow API response overwrites newer search results. How do you fix it?
+1159. Two APIs must execute in parallel. How do you implement it?
+1160. One API must execute after another API. How do you implement it?
+1161. An API response contains 100,000 records. How do you display them?
+1162. A search API gets called for every keystroke. How do you optimize it?
+1163. An API fails intermittently. How do you implement retry logic?
+1164. The backend is unavailable. How do you design graceful degradation?
+1165. How do you handle API caching across multiple components?
+45. Architecture and Design Scenarios
+1166. How do you design a large enterprise React application from scratch?
+1167. How do you divide a monolithic frontend into Micro Frontends?
+1168. How do you design a reusable component library?
+1169. How do you design a scalable state management strategy?
+1170. How do you handle cross-application communication?
+1171. How do you share authentication across Micro Frontends?
+1172. How do you implement independent deployment?
+1173. How do you handle version conflicts in shared dependencies?
+1174. How do you implement a centralized error-handling strategy?
+1175. How do you design a frontend architecture for 100+ developers?
+1176. How do you handle multiple teams working on the same React application?
+1177. How do you define frontend coding standards?
+1178. How do you establish code review guidelines?
+1179. How do you manage technical debt?
+1180. How do you introduce a new technology into an existing application?
+1181. How do you migrate an Angular application to React?
+1182. How do you migrate a legacy class component application to hooks?
+1183. How do you upgrade React 17 or React 18 to React 19?
+1184. How do you ensure backward compatibility?
+1185. How do you design a frontend architecture that supports scalability and maintainability?
+46. Product and Business Scenarios
+1186. A release is planned tomorrow, but a critical frontend bug is found. What do you do?
+1187. A business requirement changes after implementation. How do you handle it?
+1188. A designer and developer disagree on a UI implementation. How do you resolve it?
+1189. A developer proposes a different architecture from yours. How do you evaluate it?
+1190. A developer repeatedly introduces performance issues. How do you handle it?
+1191. How do you balance technical debt and feature delivery?
+1192. How do you estimate frontend development effort?
+1193. How do you plan a frontend release?
+1194. How do you measure frontend product success?
+1195. How do you improve engineering productivity?
+1196. How do you mentor junior React developers?
+1197. How do you conduct a technical interview?
+1198. How do you handle production incidents?
+1199. How do you communicate technical decisions to business stakeholders?
+1200. How do you demonstrate the impact of frontend architecture?
+Part 16: React Coding Interview Questions
+These are coding exercises that interviewers commonly ask in live coding rounds. Practice implementing each one without looking at the solution.
+47. Basic React Coding
+1201. Create a counter component using useState.
+1202. Create a counter with increment, decrement and reset.
+1203. Create a toggle button.
+1204. Create a show/hide password component.
+1205. Create a component that displays user details using props.
+1206. Create a reusable Button component.
+1207. Create a reusable Card component.
+1208. Create a list of users using map().
+1209. Create a list with add and delete functionality.
+1210. Create a Todo application.
+1211. Create a checkbox list.
+1212. Create a dropdown component.
+1213. Create a radio button group.
+1214. Create a controlled input component.
+1215. Create an uncontrolled input using useRef.
+1216. Create a form with validation.
+1217. Create a login form.
+1218. Create a registration form.
+1219. Create a search filter for a list of users.
+1220. Create a parent-child communication example.
+48. Intermediate React Coding
+1221. Create a custom useFetch Hook.
+1222. Create a custom useDebounce Hook.
+1223. Create a custom usePrevious Hook.
+1224. Create a custom useLocalStorage Hook.
+1225. Create a custom useWindowSize Hook.
+1226. Create a custom useOutsideClick Hook.
+1227. Create a custom useOnlineStatus Hook.
+1228. Create a reusable Modal component.
+1229. Create an Accordion component.
+1230. Create a Tabs component.
+1231. Create a Carousel component.
+1232. Create a Pagination component.
+1233. Create an Infinite Scroll component.
+1234. Create a Star Rating component.
+1235. Create an Autocomplete component.
+1236. Create a Multi-select Dropdown.
+1237. Create a File Upload component.
+1238. Create a Drag and Drop component.
+1239. Create a Stopwatch.
+1240. Create a Countdown Timer.
+1241. Create a Shopping Cart.
+1242. Create a Multi-step Form.
+1243. Create a Password Strength Indicator.
+1244. Create a Toast Notification component.
+1245. Create a Responsive Sidebar.
+49. Advanced React Coding
+1246. Implement a custom state management library.
+1247. Implement a custom Context Provider.
+1248. Implement a custom useReducer-based store.
+1249. Implement a custom useMemo-like Hook.
+1250. Implement a custom useCallback-like Hook.
+1251. Implement a custom useDebounce with cancellation.
+1252. Implement a custom useThrottle Hook.
+1253. Implement a custom useEventListener Hook.
+1254. Implement a custom useIntersectionObserver Hook.
+1255. Implement a custom useAbortController Hook.
+1256. Implement a custom useAsync Hook.
+1257. Implement a custom useQuery Hook.
+1258. Implement a reusable Error Boundary.
+1259. Implement a virtualized list.
+1260. Implement a searchable and sortable data table.
+1261. Implement a tree view component.
+1262. Implement a nested comments component.
+1263. Implement a file explorer.
+1264. Implement a permission-based component renderer.
+1265. Implement an accessible Modal using portals.
+1266. Implement a Compound Components pattern for Tabs.
+1267. Implement a Higher-Order Component for authentication.
+1268. Implement a Render Props pattern.
+1269. Implement a React application with Redux Toolkit.
+1270. Implement a React application with TanStack Query.
+Part 17: JavaScript Questions Asked Alongside React
+React interviews are not limited to React. JavaScript fundamentals are equally important.
+50. JavaScript Fundamentals
+1271. What is the difference between var, let and const?
+1272. What is hoisting?
+1273. What is the Temporal Dead Zone?
+1274. What is scope?
+1275. What is lexical scope?
+1276. What is a closure?
+1277. What is a callback function?
+1278. What is a higher-order function?
+1279. What is the difference between map, filter and reduce?
+1280. What is the difference between forEach and map?
+1281. What is the difference between == and ===?
+1282. What is the difference between null and undefined?
+1283. What is the difference between shallow copy and deep copy?
+1284. What is destructuring?
+1285. What is the spread operator?
+1286. What is the rest operator?
+1287. What is optional chaining?
+1288. What is nullish coalescing?
+1289. What is the Event Loop?
+1290. What are microtasks and macrotasks?
+1291. What is a Promise?
+1292. What is async/await?
+1293. What is Promise.all?
+1294. What is Promise.allSettled?
+1295. What is Promise.race?
+1296. What is Promise.any?
+1297. What is the difference between synchronous and asynchronous JavaScript?
+1298. What is the difference between debounce and throttle?
+1299. What is the difference between call, apply and bind?
+1300. What is prototype inheritance?
+51. JavaScript Output-Based Questions
+1301. What is the output of a var loop with setTimeout?
+1302. What is the output of a let loop with setTimeout?
+1303. What is the output of nested Promises?
+1304. What is the output of a Promise inside setTimeout?
+1305. What is the output of async/await with Promise callbacks?
+1306. What is the output of a closure with a loop?
+1307. What is the output of a function with a stale closure?
+1308. What is the output of a hoisting example?
+1309. What is the output of a this binding example?
+1310. What is the output of a shallow-copy example?
+Part 18: React Architect-Level System Design Questions
+1311. Design an enterprise healthcare application using React.
+1312. Design a patient scheduling application.
+1313. Design a large e-commerce application using React.
+1314. Design a frontend architecture for a multi-tenant SaaS application.
+1315. Design a React application with 10 independent business modules.
+1316. Design a Micro Frontend architecture using Module Federation.
+1317. Design a scalable authentication and authorization system.
+1318. Design a global state management architecture.
+1319. Design an API integration layer for a large enterprise.
+1320. Design a frontend caching architecture.
+1321. Design a reusable component library for multiple applications.
+1322. Design a frontend application supporting multiple languages.
+1323. Design a frontend application with accessibility requirements.
+1324. Design a high-performance dashboard with 100,000 data points.
+1325. Design a real-time application using WebSockets.
+1326. Design a React application that supports offline functionality.
+1327. Design a frontend deployment strategy with rollback.
+1328. Design a React application that supports independent team deployments.
+1329. Design a frontend observability strategy.
+1330. Design a migration strategy from a monolithic frontend to Micro Frontends.
